@@ -1,0 +1,66 @@
+.bg-darke {
+  background-color: #000;
+  width: 100%;
+}
+
+body {
+  margin: 0px;
+}
+
+.FormPage {
+  min-width: 100%;
+  min-height: 100%;
+  align-items: center;
+}
+
+.MenuButtons {
+  width: 100%;
+}
+
+.signup-h1 {
+  width: 100%;
+  text-align: center;
+}
+
+.login-container {
+  display: block;
+  margin: auto;
+  max-width: 70%;
+  margin-top: 80px;
+}
+
+.ContactUs {
+  padding: 10px;
+  background-color: #fff;
+  color: #000;
+  width: 100%;
+  margin: 0px;
+}
+
+.dashboard {
+  margin: auto;
+  padding: 50px;
+}
+
+.profile-Info {
+  display: block;
+  margin: auto;
+  padding: 12%;
+}
+
+#Edit-Info {
+  margin-top: 5px;
+}
+
+.UserName-h3 {
+  font-size: 1.5rem;
+}
+
+.hobies-container {
+  text-align: center;
+  padding: 10px;
+}
+
+.card-body {
+  padding: 10px;
+}

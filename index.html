@@ -1,0 +1,252 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <title>Ur Hotel</title>
+
+  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
+  <meta charset="utf-8">
+  <meta http-equiv="content-type" content="text/html; charset=utf-8" />
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" />
+  <link rel="stylesheet" href="css\bootstrap-grid.min.css" />
+  <link rel="stylesheet" href="css\animate.css" />
+  <link rel="stylesheet" href="css\bootstrap.min.css" />
+  <link rel="stylesheet" href="css/main.css">
+
+</head>
+
+<body>
+
+
+
+
+  <div class="container FormPage" id="First">
+    <div id="accordion" class="login-container">
+      <div class="card">
+        <div class="card-header" id="headingOne">
+          <button class="btn btn-primary MenuButtons" data-toggle="collapse" data-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne"> Sign Up </button>
+        </div>
+        <div id="collapseOne" class="collapse show" aria-labelledby="headingOne" data-parent="#accordion">
+          <div class="card-body">
+            <div id="ContactUs" class="ContactUs">
+              <div class="row">
+                <div class="col-12">
+                  <div class="signup-h1">
+                    <h1>Sign Up</h1>
+                  </div>
+                  <form id="SignUpForm">
+                    <div class="card">
+                      <div class="card-body">
+                        <div class="row">
+                          <div class="form-group col-sm-12">
+                            <label for="name" class="h4">User Name</label>
+                            <input type="text" data-error="Field empty" class="form-control" id="name" placeholder="Enter name" required>
+                            <div class="help-block with-errors d-none"></div>
+                            <div id="UserNameError" class="h3 text-center d-none">user name is taken </div>
+                          </div>
+                        </div>
+                        <div class="row">
+                          <div class="form-group col-sm-12">
+                            <label for="email" class="h4">Email</label>
+                            <input type="email" data-error="Field empty" class="form-control" id="email" placeholder="Enter email" required>
+                            <div class="help-block with-errors"></div>
+                          </div>
+                        </div>
+                        <div class="row">
+                          <div class="form-group col-sm-12">
+                            <label for="password" class="h4">Password</label>
+                            <input type="password" data-error="Field empty" class="form-control" id="password" placeholder="Enter password" required>
+                            <div class="help-block with-errors"></div>
+                          </div>
+                        </div>
+                        <div class="row">
+                          <div class="form-group col-sm-12">
+                            <label for="gender" class="h4">Sex</label>
+                            <br />
+                            <input type="radio" name="gender" value="mpic.png" checked> Male<br>
+                            <input type="radio" name="gender" value="fpic.png"> Female<br>
+                            <div class="help-block with-errors"></div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="help-block with-errors">
+                    </div>
+                    <button type="submit" id="form-submit" class="btn btn-success btn-lg MenuButtons ">Sign Up</button>
+                    <div id="msgSubmit" class="h3 text-center d-none">Sigin Up Successful </div>
+                  </form>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="card">
+        <div class="card-header" id="headingTwo">
+          <button class="btn btn-primary MenuButtons collapsed " data-toggle="collapse" data-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+            Log In
+          </button>
+        </div>
+        <div id="collapseTwo" class="collapse" aria-labelledby="headingTwo" data-parent="#accordion">
+          <div class="card-body">
+            <div id="LoginForm" class="ContactUs">
+              <div class="row">
+                <div class="col-12">
+                  <div class="signup-h1">
+                    <h1>Log In</h1>
+                  </div>
+                  <form id="contactForm">
+                    <div class="card">
+                      <div class="card-body">
+                        <div class="row">
+                          <div class="form-group col-sm-12">
+                            <label for="email" class="h4">Email</label>
+                            <input type="email" data-error="Field empty" class="form-control" id="loginemail" placeholder="Enter email" required>
+                            <div class="help-block with-errors"></div>
+                          </div>
+                        </div>
+                        <div class="row">
+                          <div class="form-group col-sm-12">
+                            <label for="password" class="h4">Password</label>
+                            <input type="password" data-error="Field empty" class="form-control" id="loginpassword" placeholder="Enter password" required>
+                            <div class="help-block with-errors"></div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="help-block with-errors">
+                    </div>
+                    <button type="submit" id="form-submit" class="btn btn-success btn-lg MenuButtons ">Log In</button>
+                    <div id="msgSubmit" class="h3 text-center d-none">Sigin Up Successful </div>
+                  </form>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+
+
+
+
+
+
+
+  <!-- ############################################################## after login  ############################################################## -->
+
+  <div class="container dashboard d-none" id="Secound">
+    <div class="row">
+      <div class="col"></div>
+      <div class="col-sm-12 col-lg-4">
+        <img src="mpic.png" class="img-fluid" id="User-Pic" />
+      </div>
+      <div class="col-sm-12 col-lg-6 ">
+        <div class="profile-Info">
+          <span class="info-h3">User Name: </span><span id="UserName">king</span>
+          <br />
+          <span class="info-h3">Email ID: </span><span id="UserEmail">king@gmail.com</span>
+          <br />
+          <span class="info-h3">Phone Number: </span><span id="UserPhoneNo">00000000</span>
+          <br />
+          <button id="Edit-Info" class="btn btn-success btn-sm ">Edit</button>
+        </div>
+      </div>
+      <div class="col"></div>
+    </div>
+    <div class="row">
+      <div class="col-sm-12 col-lg-4">
+        <div class="hobies-container">
+          <h1>Hobies</h1>
+          <ul class="hobies" id="hobies-list">
+          </ul>
+        </div>
+      </div>
+      <div class="col-sm-12 col-lg-6">
+        <div class="aboutme" id="user-aboutme">
+          <h1>About Me</h1>
+          <p class="aboutme-text" id="aboutme-text">
+          </p>
+        </div>
+      </div>
+    </div>
+    <button id="add-Info" class="btn btn-primary  MenuButtons">Add Details</button>
+  </div>
+
+  <br />
+
+
+  <div class="card-body d-none" id="Edit-window">
+    <div id="Edit-content" class="ContactUs">
+      <div class="row">
+        <div class="col-12">
+          <div class="signup-h1">
+            <h1>Edit</h1>
+          </div>
+          <form id="Edit-Form">
+            <div class="card">
+              <div class="card-body">
+                <div class="row">
+                  <div class="form-group col-sm-12">
+                    <label for="name" class="h4">User Name</label>
+                    <input type="text" data-error="Field empty" class="form-control" id="edit-name" placeholder="Enter name" required>
+                    <div class="help-block with-errors d-none"></div>
+                  </div>
+                </div>
+                <div class="row">
+                  <div class="form-group col-sm-12">
+                    <label for="phone-number" class="h4">Phone Number</label>
+                    <input type="text" data-error="Field empty" class="form-control" id="edit-PhoneNumber" placeholder="Enter Phone Number" required>
+                    <div class="help-block with-errors"></div>
+                  </div>
+                </div>
+                <div class="row">
+                  <div class="form-group col-sm-12">
+                    <label for="Hobies" class="h4">Hobies</label>
+                    <input type="text" data-error="Field empty" class="form-control" id="edit-Hobies" placeholder="Enter Hobies. with ',' (Comma) between each entry" required>
+                    <div class="help-block with-errors"></div>
+                  </div>
+                </div>
+
+                <div class="row">
+                  <div class="form-group col-sm-12">
+                    <label for="message" class="h4 ">About Me</label>
+                    <textarea id="edit-aboutme" class="form-control" rows="5" placeholder="Enter something about you!" required></textarea>
+                  </div>
+                </div>
+
+                <div class="row">
+                  <div class="form-group col-sm-12">
+                    <label for="gender" class="h4">Sex</label>
+                    <br />
+                    <input type="radio" name="gender" value="mpic.png" checked> Male<br>
+                    <input type="radio" name="gender" value="fpic.png"> Female<br>
+                    <div class="help-block with-errors"></div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="help-block with-errors">
+            </div>
+            <button type="submit" id="form-submit" class="btn btn-success btn-lg MenuButtons ">upload</button>
+            <div id="msgSubmit" class="h3 text-center d-none">Sigin Up Successful </div>
+          </form>
+        </div>
+      </div>
+    </div>
+  </div>
+
+
+
+  <script type="text/javascript" src="js/jquery.js"></script>
+  <script type="text/javascript" src="js/validator.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.3/umd/popper.min.js" integrity="sha384-vFJXuSJphROIrBnz7yo7oB41mKfc8JzQZiCq4NCceLEaO4IHwicKwpJf9c9IpFgh" crossorigin="anonymous"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.2/js/bootstrap.min.js" integrity="sha384-alpBpkh1PFOepccYVYDB4do5UnbKysX5WZXm3XxPqe5iKTfUKjNkCk9SaVuEZflJ" crossorigin="anonymous"></script>
+  <script type="text/javascript" src="js/form-scripts.js"></script>
+
+
+</body>
+
+</html>
