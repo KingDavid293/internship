@@ -113,7 +113,7 @@ $("#UserPhoneNo").html(obj.PhoneNo);
 //######## Hobies
 var array = obj.hobies.split(',');
 for(var i =0 ; i < array.length; i++){
-  $("#hobies-list").append("<li>"+obj.aboutMe+"</li>");
+  $("#hobies-list").append("<li>"+array[i]+"</li>");
 }
 $("#aboutme-text").html(obj.aboutMe);
 
